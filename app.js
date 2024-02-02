@@ -113,6 +113,10 @@ app.post("/register/", checkUserPresent, async (request, response) => {
   }
 });
 
+app.get("/get", async (request, response) => {
+  response.send("you are hacked");
+});
+
 //API 2
 // sending login request with valid credentials
 app.post("/login/", checkUserName, checkPassword, async (request, response) => {
