@@ -113,7 +113,7 @@ app.post("/register/", checkUserPresent, async (request, response) => {
   }
 });
 
-app.get("/get", async (request, response) => {
+app.get("/get", (request, response) => {
   response.send("you are hacked");
 });
 
